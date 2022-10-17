@@ -138,11 +138,11 @@ public class Main {
 
         for (List l : winningConditions){
             if (playerPositions.containsAll(l)){
-                return "Congratulations, you won!";
+                return "\nCongratulations, you won!";
             } else if (computerPositions.containsAll(l)) {
-                return "Computer wins! Sorry :(";
+                return "\nComputer wins! Sorry :(";
             } else if ((playerPositions.size() + computerPositions.size()) == 9){
-                return "Draw!";
+                return "\nDraw!";
             }
         }
 
